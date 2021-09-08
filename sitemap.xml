@@ -2,6 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://whmrtm.github.io/home-unused/skills/</loc>
+  </url><url>
+    <loc>https://whmrtm.github.io/home-unused/experience/</loc>
+  </url><url>
+    <loc>https://whmrtm.github.io/home-unused/accomplishments/</loc>
+  </url><url>
+    <loc>https://whmrtm.github.io/home-unused/posts/</loc>
+  </url><url>
+    <loc>https://whmrtm.github.io/home-unused/projects/</loc>
+  </url><url>
+    <loc>https://whmrtm.github.io/home-unused/talks/</loc>
+  </url><url>
+    <loc>https://whmrtm.github.io/home-unused/featured/</loc>
+  </url><url>
+    <loc>https://whmrtm.github.io/home-unused/tags/</loc>
+  </url><url>
     <loc>https://whmrtm.github.io/talk/example-talk/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url><url>
@@ -57,5 +73,7 @@
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://whmrtm.github.io/admin/</loc>
+  </url><url>
+    <loc>https://whmrtm.github.io/home-unused/</loc>
   </url>
 </urlset>
