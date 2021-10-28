@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"> 
+        
+        <meta name="description" content="NCA Demos">
+        <meta name="author" content="Heming Wang">
+        
+        <title>NCA Demos</title>
+        
+        <!-- Bootflat CSS -->
+        <link rel="stylesheet" href="css/bootflat.css">
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/index.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    </head>
+
+    
+    <body>
+
+    <div id="container">
+    <!-- <div id="paper_title"> -->
+    <h1 style="text-align: center;">Neural Cascade Architecture with Triple-domain Loss for Speech Enhancement</h1>
+    </div>
+    <h3 id="paper_authors" style="text-align: center;">Heming Wang and DeLiang Wang</h3>
+    <div>&nbsp;</div>
+
+    <div id="paper_abstract" style="width: 60%; margin: 0px auto;"><strong>Abstract:</strong> This paper proposes a neural cascade architecture to address the monaural speech enhancement problem. The cascade architecture is composed of three modules which optimize in turn enhanced speech with respect to the magnitude spectrogram, the time-domain signal and the complex spectrogram. Each module takes as input the noisy speech and the output obtained from the previous module, and generates a prediction of the respective target. Our model is trained in an end-to-end manner, using a triple-domain loss function that accounts for three domains of signal representation. Experimental results on the WSJ0 SI-84 corpus show that the proposed model outperforms other strong speech enhancement baselines in terms of objective speech quality and intelligibility.</div>
+
+
+    <div>&nbsp;</div>
+
+    <h2 style="text-align: center;">Audio Demos</h2>
+
+    <h4 style="text-align: center;">ADTBabble Noise </h4>
+    <table class="audio_demos" style="width: 50%; margin: 0px auto;">
+    <thead>
+    <tr>
+    <th style="text-align: center;">Sample IDs</th>
+    <th style="text-align: center;">Unprocessed Mixture</th>
+    <th style="text-align: center;">Estimated Speech</th>
+    <th style="text-align: center;">Ground-Truth</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr style="border-top: 1px solid black;">
+    <td><strong>A</strong></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Noisy_01jc020y_ADTbabble_snr-5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Pred_01jc020y_ADTbabble_snr-5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Clean_01jc020y_ADTbabble_snr-5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    </tr>
+    <tr>
+    <td><strong>B</strong></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Noisy_01yc020o_ADTbabble_snr0.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Pred_01yc020o_ADTbabble_snr0.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Clean_01yc020o_ADTbabble_snr0.0.wav" type="audio/wav" />
+                                    </audio></td>
+    </tr>
+    <tr>
+    <td><strong>C</strong></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Noisy_01rc020x_ADTbabble_snr5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Pred_01rc020x_ADTbabble_snr5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Clean_01rc020x_ADTbabble_snr5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+
+    <h4 style="text-align: center;">ADTCafeteria Noise </h4>
+    <table class="audio_demos"  style="width: 50%; margin: 0px auto;">
+    <thead>
+    <tr>
+    <th style="text-align: center;">Sample IDs</th>
+    <th style="text-align: center;">Unprocessed Mixture</th>
+    <th style="text-align: center;">Estimated Speech</th>
+    <th style="text-align: center;">Ground-Truth</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr style="border-top: 1px solid black;">
+    <td><strong>D</strong></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Noisy_01jc020t_ADTcafeteria_snr-5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Pred_01jc020t_ADTcafeteria_snr-5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Clean_01jc020t_ADTcafeteria_snr-5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    </tr>
+    <tr>
+    <td><strong>E</strong></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Noisy_01mc020s_ADTcafeteria_snr0.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Pred_01mc020s_ADTcafeteria_snr0.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Clean_01mc020s_ADTcafeteria_snr0.0.wav" type="audio/wav" />
+                                    </audio></td>
+    </tr>
+    <tr>
+    <td><strong>F</strong></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Noisy_01yc020c_ADTcafeteria_snr5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Pred_01yc020c_ADTcafeteria_snr5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Clean_01yc020c_ADTcafeteria_snr5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    </tr>
+    </tbody>
+    </table>
+
+    <h4 style="text-align: center;">NOISEXBabble Noise </h4>
+    <table class="audio_demos" style="width: 50%; margin: 0px auto;">
+    <thead>
+    <tr>
+    <th style="text-align: center;">Sample IDs</th>
+    <th style="text-align: center;">Unprocessed Mixture</th>
+    <th style="text-align: center;">Estimated Speech</th>
+    <th style="text-align: center;">Ground-Truth</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr style="border-top: 1px solid black;">
+    <td><strong>G</strong></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Noisy_01rc020y_NoiseXbabble_snr-5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Pred_01rc020y_NoiseXbabble_snr-5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Clean_01rc020y_NoiseXbabble_snr-5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    </tr>
+    <tr>
+    <td><strong>H</strong></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Noisy_01kc020j_NoiseXbabble_snr0.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Pred_01kc020j_NoiseXbabble_snr0.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Clean_01kc020j_NoiseXbabble_snr0.0.wav" type="audio/wav" />
+                                    </audio></td>
+    </tr>
+    <tr>
+    <td><strong>I</strong></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Noisy_01mc020a_NoiseXbabble_snr5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Pred_01mc020a_NoiseXbabble_snr5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Clean_01mc020a_NoiseXbabble_snr5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+
+    <h4 style="text-align: center;">NOISEXFactory Noise </h4>
+    <table class="audio_demos" style="width: 50%; margin: 0px auto;">
+    <thead>
+    <tr>
+    <th style="text-align: center;">Sample IDs</th>
+    <th style="text-align: center;">Unprocessed Mixture</th>
+    <th style="text-align: center;">Estimated Speech</th>
+    <th style="text-align: center;">Ground-Truth</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr style="border-top: 1px solid black;">
+    <td><strong>J</strong></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Noisy_01yc020j_NoiseXfactory_snr-5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Pred_01yc020j_NoiseXfactory_snr-5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Clean_01yc020j_NoiseXfactory_snr-5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    </tr>
+    <tr>
+    <td><strong>K</strong></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Noisy_01jc020g_NoiseXfactory_snr0.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Pred_01jc020g_NoiseXfactory_snr0.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Clean_01jc020g_NoiseXfactory_snr0.0.wav" type="audio/wav" />
+                                    </audio></td>
+    </tr>
+    <tr>
+    <td><strong>L</strong></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Noisy_01yc020t_NoiseXfactory_snr5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Pred_01yc020t_NoiseXfactory_snr5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 240px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/NCA_demos/Clean_01yc020t_NoiseXfactory_snr5.0.wav" type="audio/wav" />
+                                    </audio></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+
+    </div>
+
+</body>
+</html>
