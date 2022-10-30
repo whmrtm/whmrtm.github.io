@@ -5,7 +5,7 @@
     <link>https://whmrtm.github.io/publication-type/1/</link>
       <atom:link href="https://whmrtm.github.io/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://whmrtm.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>1</title>
@@ -13,22 +13,51 @@
     </image>
     
     <item>
-      <title>An example conference paper</title>
-      <link>https://whmrtm.github.io/publication/example/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://whmrtm.github.io/publication/example/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <title>Attention-Based Fusion for Bone-Conducted and Air-Conducted Speech Enhancement in the Complex Domain</title>
+      <link>https://whmrtm.github.io/publication/wang-2022-attention/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://whmrtm.github.io/publication/wang-2022-attention/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cross-Domain Speech Enhancement with a Neural Cascade Architecture</title>
+      <link>https://whmrtm.github.io/publication/wang-2022-crossicassp/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://whmrtm.github.io/publication/wang-2022-crossicassp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Improving noise robustness of contrastive speech representation learning with speech reconstruction</title>
+      <link>https://whmrtm.github.io/publication/wang-2022-improving/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://whmrtm.github.io/publication/wang-2022-improving/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wav2vec-switch: Contrastive learning from original-noisy speech pairs for robust speech recognition</title>
+      <link>https://whmrtm.github.io/publication/wang-2022-wav-2-vec/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://whmrtm.github.io/publication/wang-2022-wav-2-vec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Time-frequency loss for CNN based speech super-resolution</title>
+      <link>https://whmrtm.github.io/publication/wang-2020-time/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://whmrtm.github.io/publication/wang-2020-time/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A diffusion-based two-dimensional Empirical Mode Decomposition (EMD) algorithm for image analysis</title>
+      <link>https://whmrtm.github.io/publication/wang-2018-diffusion/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://whmrtm.github.io/publication/wang-2018-diffusion/</guid>
+      <description></description>
     </item>
     
   </channel>
