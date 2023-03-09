@@ -1,0 +1,425 @@
+
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Cross-domain Diffusion based Speech Enhancement for Very Noisy Speech</title>
+      <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+      <!-- <link rel="shortcut icon" href="../../images/taco.png"> -->
+      <script>
+         function play(path) {{
+           var player = document.getElementById('player');
+           player.src = path;
+           player.play();
+         }}
+      </script>
+      <style>
+         .audio-cell {
+         /* Center audio widgets in the table cell. */
+         text-align: center;
+         padding-bottom: 1px;
+         padding-top: 1px;
+         }
+         .audio-cell-padded {
+         text-align: center;
+         padding-bottom: 10px;
+         padding-top: 10px;
+         }
+         .audio-header {
+         /* Don't wrap header text. */
+         white-space: nowrap;
+         /* Some breaking space between headers for readability. */
+         padding-right: 5px;
+         padding-left: 5px;
+         }
+         .reference-cell {
+         /* For uniformity and to wrap long reference text, limit the reference cell's width. */
+         width: 25%;
+         padding-top: 20px;
+         padding-bottom: 20px;
+         }
+         .sample audio {
+         vertical-align: middle;
+         padding-left: 3px;
+         padding-right: 3px;
+         }
+         .round-button {
+         box-sizing: border-box;
+         display:block;
+         width:30px;
+         height:30px;
+         padding-top: 8px;
+         padding-left: 3px;
+         line-height: 6px;
+         border: 1.2px solid #000;
+         border-radius: 50%;
+         color: #000;
+         text-align:center;
+         background-color: rgba(0,0,0,0.00);
+         font-size:6px;
+         box-shadow: 0px 0px 2px rgba(0,0,0,1);
+         transition: all 0.2s ease;
+         }
+         .round-button:hover {
+         background-color: rgba(0,0,0,0.0);
+         box-shadow: 0px 0px 4px rgba(0,0,0,1);
+         }
+         .round-button:active {
+         background-color: rgba(0,0,0,0.01);
+         box-shadow: 0px 0px 1px rgba(0,0,0,1);
+         }
+      </style>
+   </head>
+
+   <body>
+     <div class="main">
+       <article>
+         <header>
+            <h1 style="text-align: center;">Cross-domain Diffusion based Speech Enhancement for Very Noisy Speech</h1>		  
+         </header>
+      </article>
+      <div>
+      </div>
+
+      <p style="text-align: center;">
+      <b style="text-align: center;">Authors:</b>
+      Heming Wang and DeLiang Wang
+      </p>
+
+      <p style="text-align: center; width: 50%; margin: 0px auto;">
+      <b style="text-align: center;">Abstract:</b>
+      Deep learning based speech enhancement has achieved remarkable success, but challenges remain in low signal-to-noise ratio (SNR) nonstationary noise scenarios. In this study, we propose to incorporate diffusion-based learning into an enhancement model and improve robustness in extremely noisy conditions. Specifically, a frequency-domain diffusion-based generative module is employed, and it accepts the enhanced signal obtained from a time-domain supervised enhancement module as an auxiliary input to learn to recover clean speech spectrograms. Experimental results on the TIMIT dataset demonstrate the advantage of this approach and show better enhancement performance over other strong baselines in both -5 and -10 dB SNR noisy conditions.
+      </p>
+
+      <hr color="#0ABAB5"; size="5">
+
+      <!-- <h2 style="text-align: center;">
+        Contents
+      </h2> -->
+
+
+
+  <h2 id="diffusion" style="text-align: center;"> Diffusion Process </h2>
+
+  <table class="diffusion" style="width: 100%; margin: 0px auto;">
+
+    <tr>
+        <td align="left"> 
+        <p style="text-align: center">
+          <img src="/uploads/CDDSE_demo/DiffusionProcess1.png" width="1200" alt=""/> <br />
+        </td>
+    <tr>
+  </table>
+  
+
+  <h2 id="spectrograms" style="text-align: center;"> spectrograms demonstrations </h2>
+
+    <table class="audio_demos" style="width: 100%; margin: 0px auto;">
+
+    <tr>
+        <td align="left"> 
+        <p style="text-align: center">
+          <img src="/uploads/CDDSE_demo/SpecDemo.png" width="1200" alt=""/> <br />
+        </td>
+    <tr>
+  </table>
+      <!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<hr color="#0ABAB5"; size="5">
+
+<h2 id="audios" style="text-align: center;"> Audio Demos </h2>
+
+<p style="text-align: center;">
+  We provide audio demos for one male and one female speakers under two SNR levels, -5 dB and -10 dB:<br>
+</p>
+
+  <h4 style="text-align: center;">Factory Noise -5 dB </h4>
+
+  <table class="audio_demos" style="width: 50%; margin: 0px auto;">
+
+    <thead>
+    <tr>
+      <th style="text-align: center;">Noisy Mixture</th>
+      <th style="text-align: center;">GCRN</th>
+      <th style="text-align: center;">DPARN</th>
+      <th style="text-align: center;">Proposed</th>
+      <th style="text-align: center;">Clean Speech</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr style="border-top: 1px solid black;">
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Factory_-5dB/Noisy_0.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Factory_-5dB/GCRN_0.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Factory_-5dB/DPARN_0.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Factory_-5dB/Resyn_0.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Factory_-5dB/Clean_0.wav" type="audio/wav" />
+                                        </audio></td>
+        </tr>
+
+        <tr style="border-top: 1px solid black;">
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Factory_-5dB/Noisy_1.wav" type="audio/wav" />
+                                          </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Factory_-5dB/GCRN_1.wav" type="audio/wav" />
+                                          </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Factory_-5dB/DPARN_1.wav" type="audio/wav" />
+                                          </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Factory_-5dB/Resyn_1.wav" type="audio/wav" />
+                                          </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Factory_-5dB/Clean_1.wav" type="audio/wav" />
+                                          </audio></td>
+          </tr>
+
+          <tr style="border-top: 1px solid black;">
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Factory_-5dB/Noisy_2.wav" type="audio/wav" />
+                                            </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Factory_-5dB/GCRN_2.wav" type="audio/wav" />
+                                            </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Factory_-5dB/DPARN_2.wav" type="audio/wav" />
+                                            </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Factory_-5dB/Resyn_2.wav" type="audio/wav" />
+                                            </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Factory_-5dB/Clean_2.wav" type="audio/wav" />
+                                            </audio></td>
+            </tr>
+    </tbody>
+  </table>
+  
+
+
+
+  <h4 style="text-align: center;"> Factory Noise -10 dB </h4>
+  <table class="audio_demos" style="width: 50%; margin: 0px auto;">
+
+    <thead>
+    <tr>
+      <th style="text-align: center;">Noisy Mixture</th>
+      <th style="text-align: center;">GCRN</th>
+      <th style="text-align: center;">DPARN</th>
+      <th style="text-align: center;">Proposed</th>
+      <th style="text-align: center;">Clean Speech</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr style="border-top: 1px solid black;">
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Factory_-10dB/Noisy_0.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Factory_-10dB/GCRN_0.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Factory_-10dB/DPARN_0.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Factory_-10dB/Resyn_0.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Factory_-10dB/Clean_0.wav" type="audio/wav" />
+                                        </audio></td>
+        </tr>
+
+        <tr style="border-top: 1px solid black;">
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Factory_-10dB/Noisy_1.wav" type="audio/wav" />
+                                          </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Factory_-10dB/GCRN_1.wav" type="audio/wav" />
+                                          </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Factory_-10dB/DPARN_1.wav" type="audio/wav" />
+                                          </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Factory_-10dB/Resyn_1.wav" type="audio/wav" />
+                                          </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Factory_-10dB/Clean_1.wav" type="audio/wav" />
+                                          </audio></td>
+          </tr>
+
+          <tr style="border-top: 1px solid black;">
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Factory_-5dB/Noisy_2.wav" type="audio/wav" />
+                                            </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Factory_-5dB/GCRN_2.wav" type="audio/wav" />
+                                            </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Factory_-5dB/DPARN_2.wav" type="audio/wav" />
+                                            </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Factory_-5dB/Resyn_2.wav" type="audio/wav" />
+                                            </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Factory_-5dB/Clean_2.wav" type="audio/wav" />
+                                            </audio></td>
+            </tr>
+    </tbody>
+  </table>
+  
+
+  <h4 style="text-align: center;"> Babble Noise -5 dB </h4>
+
+  <table class="audio_demos" style="width: 50%; margin: 0px auto;">
+
+    <thead>
+    <tr>
+      <th style="text-align: center;">Noisy Mixture</th>
+      <th style="text-align: center;">GCRN</th>
+      <th style="text-align: center;">DPARN</th>
+      <th style="text-align: center;">Proposed</th>
+      <th style="text-align: center;">Clean Speech</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr style="border-top: 1px solid black;">
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Babble_-5dB/Noisy_0.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Babble_-5dB/GCRN_0.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Babble_-5dB/DPARN_0.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Babble_-5dB/Resyn_0.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Babble_-5dB/Clean_0.wav" type="audio/wav" />
+                                        </audio></td>
+        </tr>
+
+        <tr style="border-top: 1px solid black;">
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Babble_-5dB/Noisy_1.wav" type="audio/wav" />
+                                          </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Babble_-5dB/GCRN_1.wav" type="audio/wav" />
+                                          </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Babble_-5dB/DPARN_1.wav" type="audio/wav" />
+                                          </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Babble_-5dB/Resyn_1.wav" type="audio/wav" />
+                                          </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Babble_-5dB/Clean_1.wav" type="audio/wav" />
+                                          </audio></td>
+          </tr>
+
+          <tr style="border-top: 1px solid black;">
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Babble_-5dB/Noisy_2.wav" type="audio/wav" />
+                                            </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Babble_-5dB/GCRN_2.wav" type="audio/wav" />
+                                            </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Babble_-5dB/DPARN_2.wav" type="audio/wav" />
+                                            </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Babble_-5dB/Resyn_2.wav" type="audio/wav" />
+                                            </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Babble_-5dB/Clean_2.wav" type="audio/wav" />
+                                            </audio></td>
+            </tr>
+    </tbody>
+  </table>
+  
+
+
+
+  <h4 style="text-align: center;"> Babble Noise -10 dB </h4>
+  <table class="audio_demos" style="width: 50%; margin: 0px auto;">
+
+    <thead>
+    <tr>
+      <th style="text-align: center;">Noisy Mixture</th>
+      <th style="text-align: center;">GCRN</th>
+      <th style="text-align: center;">DPARN</th>
+      <th style="text-align: center;">Proposed</th>
+      <th style="text-align: center;">Clean Speech</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr style="border-top: 1px solid black;">
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Babble_-10dB/Noisy_0.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Babble_-10dB/GCRN_0.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Babble_-10dB/DPARN_0.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Babble_-10dB/Resyn_0.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/CDDSE_demo/Babble_-10dB/Clean_0.wav" type="audio/wav" />
+                                        </audio></td>
+        </tr>
+
+        <tr style="border-top: 1px solid black;">
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Babble_-10dB/Noisy_1.wav" type="audio/wav" />
+                                          </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Babble_-10dB/GCRN_1.wav" type="audio/wav" />
+                                          </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Babble_-10dB/DPARN_1.wav" type="audio/wav" />
+                                          </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Babble_-10dB/Resyn_1.wav" type="audio/wav" />
+                                          </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                          <source src="/uploads/CDDSE_demo/Babble_-10dB/Clean_1.wav" type="audio/wav" />
+                                          </audio></td>
+          </tr>
+
+          <tr style="border-top: 1px solid black;">
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Babble_-10dB/Noisy_2.wav" type="audio/wav" />
+                                            </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Babble_-10dB/GCRN_2.wav" type="audio/wav" />
+                                            </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Babble_-10dB/DPARN_2.wav" type="audio/wav" />
+                                            </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Babble_-10dB/Resyn_2.wav" type="audio/wav" />
+                                            </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                            <source src="/uploads/CDDSE_demo/Babble_-10dB/Clean_2.wav" type="audio/wav" />
+                                            </audio></td>
+            </tr>
+    </tbody>
+  </table>
+  
+
+
+</div>
+</body>
+</html>
