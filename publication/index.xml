@@ -5,12 +5,28 @@
     <link>https://whmrtm.github.io/publication/</link>
       <atom:link href="https://whmrtm.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://whmrtm.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>https://whmrtm.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>Cross-Domain Diffusion Based Speech Enhancement for Very Noisy Speech</title>
+      <link>https://whmrtm.github.io/publication/wang-2023-cddse/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://whmrtm.github.io/publication/wang-2023-cddse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DATA2VEC-SG: Improving Self-Supervised Learning Representations for Speech Generation Tasks</title>
+      <link>https://whmrtm.github.io/publication/wang-2023-data-2-vec/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://whmrtm.github.io/publication/wang-2023-data-2-vec/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Attention-Based Fusion for Bone-Conducted and Air-Conducted Speech Enhancement in the Complex Domain</title>
