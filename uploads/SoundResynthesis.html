@@ -1,0 +1,370 @@
+
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Unifying Robustness and Fidelity: A Comprehensive Study of Pretrained Generative Methods for Speech Enhancement in Adverse Conditions</title>
+      <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+      <!-- <link rel="shortcut icon" href="../../images/taco.png"> -->
+      <script>
+         function play(path) {{
+           var player = document.getElementById('player');
+           player.src = path;
+           player.play();
+         }}
+      </script>
+      <style>
+         .audio-cell {
+         /* Center audio widgets in the table cell. */
+         text-align: center;
+         padding-bottom: 2px;
+         padding-top: 2px;
+         }
+         .audio-cell-padded {
+         text-align: center;
+         padding-bottom: 10px;
+         padding-top: 10px;
+         }
+         .audio-header {
+         /* Don't wrap header text. */
+         white-space: nowrap;
+         /* Some breaking space between headers for readability. */
+         padding-right: 5px;
+         padding-left: 5px;
+         }
+         .reference-cell {
+         /* For uniformity and to wrap long reference text, limit the reference cell's width. */
+         width: 25%;
+         padding-top: 20px;
+         padding-bottom: 20px;
+         }
+         .sample audio {
+         vertical-align: middle;
+         padding-left: 3px;
+         padding-right: 3px;
+         }
+         .round-button {
+         box-sizing: border-box;
+         display:block;
+         width:30px;
+         height:30px;
+         padding-top: 8px;
+         padding-left: 3px;
+         line-height: 6px;
+         border: 1.2px solid #000;
+         border-radius: 50%;
+         color: #000;
+         text-align:center;
+         background-color: rgba(0,0,0,0.00);
+         font-size:6px;
+         box-shadow: 0px 0px 2px rgba(0,0,0,1);
+         transition: all 0.2s ease;
+         }
+         .round-button:hover {
+         background-color: rgba(0,0,0,0.0);
+         box-shadow: 0px 0px 4px rgba(0,0,0,1);
+         }
+         .round-button:active {
+         background-color: rgba(0,0,0,0.01);
+         box-shadow: 0px 0px 1px rgba(0,0,0,1);
+         }
+         table tr {
+          /* border: 1px solid black; */
+          border-top: 1px solid black;
+        }
+      </style>
+   </head>
+
+   <body>
+     <div class="main">
+       <article>
+         <header>
+            <h1 style="text-align: center;">Unifying Robustness and Fidelity: <br> A Comprehensive Study of Pretrained Generative Methods for Speech Enhancement in Adverse Conditions</h1>		  
+         </header>
+      </article>
+      <div>
+      </div>
+
+      <p style="text-align: center;">
+      <b style="text-align: center;">Authors:</b>
+        Heming Wang, Meng Yu, Hao Zhang, Chunlei Zhang, Zhongweiyang Xu, Muqiao Yang, Yixuan Zhang, and Dong Yu
+    </p>
+
+      <p style="text-align: center; width: 50%; margin: 0px auto;">
+      <b style="text-align: center;">Abstract: </b>
+      Enhancing speech signal quality in adverse acoustic environments is a persistent challenge in speech processing. Existing deep learning based enhancement methods often struggle to effectively remove background noise and reverberation in real-world scenarios, hampering listening experiences.
+        To mitigate these challenges, we propose a novel approach that uses pre-trained generative methods to resynthesize clean, anechoic speech from degraded inputs.
+        This study leverages pre-trained vocoder or codec models to synthesize high-quality speech while enhancing robustness in challenging scenarios.
+        Generative methods effectively handle information loss in speech signals, resulting in regenerated speech that has improved fidelity and reduced artifacts. By harnessing the capabilities of pre-trained models, we achieve faithful reproduction of the original speech in adverse conditions.
+        Experimental evaluations on both simulated datasets and realistic samples demonstrate the effectiveness and robustness of our proposed methods.
+        Especially by leveraging codec, we achieve superior subjective scores in both simulated and realistic recordings.
+        The generated speech exhibits enhanced audio quality, reduced background noise, and reverberation.
+        Our findings highlight the potential of pre-trained generative techniques to revolutionize speech signal processing, particularly in scenarios where traditional methods falter.
+      </p>
+      
+      <hr color="#0ABAB5"; size="5">
+
+      <!-- <h2 style="text-align: center;">
+        Contents
+      </h2> -->
+
+
+
+  <h2 id="architecture" style="text-align: center;"> Architectures of the proposed vocoder and codec approaches </h2>
+
+  <table class="architecture" style="width: 100%; margin: 0px auto;">
+
+      <tr>
+        <td align="center"> 
+          <img src="/uploads/SoundResynthesis_demo/vocoder_pipeline.png" width="1000" alt=""/> <br />
+          <p style="text-align: center">
+            Fig. 1: the architecture for the proposed vocoder pipeline.<br>
+          </p>
+        </td>
+      </tr>
+      <p style="text-align: center;">
+        
+      
+      <tr>
+        <td align="center"> 
+          <img src="/uploads/SoundResynthesis_demo/codec_pipeline.png" width="1000" alt=""/> <br />
+          <p style="text-align: center">
+            Fig. 2: the architecture for the proposed codec pipeline.<br>
+          </p>
+        </td>
+      </tr>
+  
+    </table>
+  
+
+  <hr color="#0ABAB5"; size="5">
+
+  <h2 id="Results" style="text-align: center;"> Results </h2>
+
+    <table class="Results" style="width: 830; margin: 0px auto;">
+
+      <tr>
+        <td align="left"> 
+          <img src="/uploads/SoundResynthesis_demo/objective.png" width="400" alt=""/> <br />
+          <p style="text-align: center">
+            Objective scores of All Pipelines for Comparison.
+          </p>
+        </td>
+        <td align="right"> 
+            <img src="/uploads/SoundResynthesis_demo/MOS.png" width="400" alt=""/> <br />
+            <p style="text-align: center">
+              Diagrams of MOS for both synthetic and realistic samples.
+            </p>
+        </td>
+      </tr>
+    </table>
+
+
+<hr color="#0ABAB5"; size="5">
+
+<h2 id="audios" style="text-align: center;"> Audio Demos </h2>
+
+<p style="text-align: center;">
+  We provide audio demos for both simulated data and real-world recordings: <br>
+</p>
+
+  <h4 style="text-align: center;">I. Reverberant Samples </h4>
+
+  <table class="audio_demos" style="width: 50%; margin: 0px auto;">
+
+    <thead>
+    <tr>
+      <th style="text-align: left;">ID</th>
+      <th style="text-align: center;">Unprocessed</th>
+      <th style="text-align: center;">STFT-based</th>
+      <th style="text-align: center;">Vocoder-based</th>
+      <th style="text-align: center;">Codec-based</th>
+      <th style="text-align: center;">Ground Truth</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <b>A</b>
+        </td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/SoundResynthesis_demo/wavs/Input/10-81.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/SoundResynthesis_demo/wavs/STFT/10-81.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/SoundResynthesis_demo/wavs/Vocoder/10-81.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/SoundResynthesis_demo/wavs/Codec/10-81.wav" type="audio/wav" />
+                                        </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/SoundResynthesis_demo/wavs/Target/10-81.wav" type="audio/wav" />
+                                        </audio></td>
+        </tr>
+
+        <tr>
+          <td>
+            <b>B</b>
+          </td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+            <source src="/uploads/SoundResynthesis_demo/wavs/Input/26-36.wav" type="audio/wav" />
+            </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                      <source src="/uploads/SoundResynthesis_demo/wavs/STFT/26-36.wav" type="audio/wav" />
+                      </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                      <source src="/uploads/SoundResynthesis_demo/wavs/Vocoder/26-36.wav" type="audio/wav" />
+                      </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                      <source src="/uploads/SoundResynthesis_demo/wavs/Codec/26-36.wav" type="audio/wav" />
+                      </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                      <source src="/uploads/SoundResynthesis_demo/wavs/Target/26-36.wav" type="audio/wav" />
+                      </audio></td>
+          </tr>
+
+          <tr>
+            <td>
+              <b>C</b>
+            </td>
+
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+              <source src="/uploads/SoundResynthesis_demo/wavs/Input/35-57.wav" type="audio/wav" />
+              </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                          <source src="/uploads/SoundResynthesis_demo/wavs/STFT/35-57.wav" type="audio/wav" />
+                          </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                          <source src="/uploads/SoundResynthesis_demo/wavs/Vocoder/35-57.wav" type="audio/wav" />
+                          </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                          <source src="/uploads/SoundResynthesis_demo/wavs/Codec/35-57.wav" type="audio/wav" />
+                          </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                          <source src="/uploads/SoundResynthesis_demo/wavs/Target/35-57.wav" type="audio/wav" />
+                          </audio></td>
+            </tr>
+
+            <tr>
+              <td>
+                <b>D</b>
+              </td>
+
+              <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                <source src="/uploads/SoundResynthesis_demo/wavs/Input/28-112.wav" type="audio/wav" />
+                </audio></td>
+              <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                              <source src="/uploads/SoundResynthesis_demo/wavs/STFT/28-112.wav" type="audio/wav" />
+                              </audio></td>
+              <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                              <source src="/uploads/SoundResynthesis_demo/wavs/Vocoder/28-112.wav" type="audio/wav" />
+                              </audio></td>
+              <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                              <source src="/uploads/SoundResynthesis_demo/wavs/Codec/28-112.wav" type="audio/wav" />
+                              </audio></td>
+              <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                              <source src="/uploads/SoundResynthesis_demo/wavs/Target/28-112.wav" type="audio/wav" />
+                              </audio></td>
+              </tr>
+
+          </tbody>
+  </table>
+  
+
+
+
+  <h4 style="text-align: center;"> II. Real-world Recordings Samples </h4>
+  <table class="audio_demos" style="width: 50%; margin: 0px auto;">
+
+    <thead>
+    <tr>
+      <th style="text-align: left;">ID</th>
+      <th style="text-align: center;">Unprocessed</th>
+      <th style="text-align: center;">STFT-based</th>
+      <th style="text-align: center;">Vocoder-based</th>
+      <th style="text-align: center;">Codec-based</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <b>E</b>
+        </td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+          <source src="/uploads/SoundResynthesis_demo/wavs/Input/large_conferenceroom_iphone12_pro_capture.wav" type="audio/wav" />
+          </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                  <source src="/uploads/SoundResynthesis_demo/wavs/STFT/large_conferenceroom_iphone12_pro_capture.wav" type="audio/wav" />
+                  </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                  <source src="/uploads/SoundResynthesis_demo/wavs/Vocoder/large_conferenceroom_iphone12_pro_capture.wav" type="audio/wav" />
+                  </audio></td>
+        <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                  <source src="/uploads/SoundResynthesis_demo/wavs/Codec/large_conferenceroom_iphone12_pro_capture.wav" type="audio/wav" />
+                  </audio></td>
+
+        </tr>
+
+        <tr>
+          <td>
+            <b>F</b>
+          </td>
+  
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+            <source src="/uploads/SoundResynthesis_demo/wavs/Input/small_conferenceroom_condensermic_capture.wav" type="audio/wav" />
+            </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                    <source src="/uploads/SoundResynthesis_demo/wavs/STFT/small_conferenceroom_condensermic_capture.wav" type="audio/wav" />
+                    </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                    <source src="/uploads/SoundResynthesis_demo/wavs/Vocoder/small_conferenceroom_condensermic_capture.wav" type="audio/wav" />
+                    </audio></td>
+          <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                    <source src="/uploads/SoundResynthesis_demo/wavs/Codec/small_conferenceroom_condensermic_capture.wav" type="audio/wav" />
+                    </audio></td>
+          </tr>
+
+          <tr>
+            <td>
+              <b>G</b>
+            </td>
+    
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+              <source src="/uploads/SoundResynthesis_demo/wavs/Input/upstream_capture_1CH_in_1611man_5m_aircon.wav" type="audio/wav" />
+              </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                      <source src="/uploads/SoundResynthesis_demo/wavs/STFT/upstream_capture_1CH_in_1611man_5m_aircon.wav" type="audio/wav" />
+                      </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                      <source src="/uploads/SoundResynthesis_demo/wavs/Vocoder/upstream_capture_1CH_in_1611man_5m_aircon.wav" type="audio/wav" />
+                      </audio></td>
+            <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                      <source src="/uploads/SoundResynthesis_demo/wavs/Codec/upstream_capture_1CH_in_1611man_5m_aircon.wav" type="audio/wav" />
+                      </audio></td>
+            </tr>
+            <tr>
+              <td>
+                <b>H</b>
+              </td>
+      
+    
+              <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                <source src="/uploads/SoundResynthesis_demo/wavs/Input/upstream_capture_1CH_in_2907woman1_5m_footstep.wav" type="audio/wav" />
+                </audio></td>
+              <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                        <source src="/uploads/SoundResynthesis_demo/wavs/STFT/upstream_capture_1CH_in_2907woman1_5m_footstep.wav" type="audio/wav" />
+                        </audio></td>
+              <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                        <source src="/uploads/SoundResynthesis_demo/wavs/Vocoder/upstream_capture_1CH_in_2907woman1_5m_footstep.wav" type="audio/wav" />
+                        </audio></td>
+              <td><audio class="audio-player" style="width: 260px;" preload="metadata" controls="controls">
+                        <source src="/uploads/SoundResynthesis_demo/wavs/Codec/upstream_capture_1CH_in_2907woman1_5m_footstep.wav" type="audio/wav" />
+                        </audio></td>
+              </tr>
+
+          </tbody>
+  </table>
+  </div>
+</body>
+</html>
