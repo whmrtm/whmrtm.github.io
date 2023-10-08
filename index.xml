@@ -89,6 +89,46 @@
     </item>
     
     <item>
+      <title>uSee: Unified Speech Enhancement and Editing with Conditional Diffusion Models</title>
+      <link>https://whmrtm.github.io/publication/yang-2023-usee/</link>
+      <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://whmrtm.github.io/publication/yang-2023-usee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Diffusion Conditional Expectation Model for Efficient and Robust Target Speech Extraction</title>
+      <link>https://whmrtm.github.io/publication/zhang-2023-diffusion/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://whmrtm.github.io/publication/zhang-2023-diffusion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unifying Robustness and Fidelity: A Comprehensive Study of Pretrained Generative Methods for Speech Enhancement in Adverse Conditions</title>
+      <link>https://whmrtm.github.io/publication/wang-2023-unifying/</link>
+      <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://whmrtm.github.io/publication/wang-2023-unifying/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SpatialCodec: Neural Spatial Speech Coding</title>
+      <link>https://whmrtm.github.io/publication/xu-2023-spatialcodec/</link>
+      <pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://whmrtm.github.io/publication/xu-2023-spatialcodec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>$ F0 $ Estimation and Voicing Detection With Cascade Architecture in Noisy Speech</title>
+      <link>https://whmrtm.github.io/publication/zhang-2023-f-0/</link>
+      <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://whmrtm.github.io/publication/zhang-2023-f-0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Cross-Domain Diffusion Based Speech Enhancement for Very Noisy Speech</title>
       <link>https://whmrtm.github.io/publication/wang-2023-cddse/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
