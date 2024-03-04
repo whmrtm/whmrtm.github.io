@@ -78,7 +78,10 @@
      <div class="main">
        <article>
          <header>
-            <h1 style="text-align: center;">Unifying Robustness and Fidelity: <br> A Comprehensive Study of Pretrained Generative Methods for Speech Enhancement in Adverse Conditions</h1>		  
+            <h1 style="text-align: center;">
+              <!-- Unifying Robustness and Fidelity: <br> A Comprehensive Study of Pretrained Generative Methods for Speech Enhancement in Adverse Conditions -->
+              Unifying Robustness and Fidelity: <br> Using Pretrained Generative Methods for Speech Enhancement in Adverse Conditions
+            </h1>		  
          </header>
       </article>
       <div>
@@ -91,8 +94,15 @@
 
       <p style="text-align: center; width: 50%; margin: 0px auto;">
       <b style="text-align: center;">Abstract: </b>
-      Enhancing speech signals in adverse acoustic environments is a long-standing challenge in speech processing. Existing deep learning based enhancement methods struggle with removing background noise and reverberation in real-world challenging scenarios. To address this challenge, we propose a novel approach that uses a pre-trained speech codec to synthesize clean speech given degraded inputs. In addition, we conduct a comprehensive comparison with two other pipelines: mapping-based and vocoder-based speech enhancement. Experimental results on both simulated and recorded datasets demonstrate the effectiveness and robustness of our proposed method. We observe generative methods show stronger robustness against degradation, resulting in improved fidelity in adverse environments compared with conventional mapping-based speech enhancement. In particular, by leveraging the codec, we achieve improved audio quality with reduced background noise, and reverberation. Our findings highlight the potential of pre-trained generative techniques in speech processing, particularly in scenarios where traditional methods are ineffective.
-      </p>
+      Enhancing speech signals in adverse acoustic environments is a long-standing challenge in speech processing.
+      Existing deep learning based enhancement methods struggle with removing background noise and reverberation in real-world challenging scenarios.
+      To address this challenge, we propose a novel approach that uses a pre-trained speech codec to synthesize clean speech given degraded inputs.
+      In addition, we conduct a comprehensive comparison with two other pipelines: mapping-based and vocoder-based speech enhancement.
+      Experimental results on both simulated and recorded datasets demonstrate the effectiveness and robustness of our proposed method.
+      We observe generative methods show stronger robustness against degradation compared with conventional mapping-based speech enhancement.
+      In particular, by leveraging the codec, we achieve improved audio quality with reduced background noise, and reverberation.
+    
+    </p>
       
       <hr color="#0ABAB5"; size="5">
 
@@ -106,26 +116,32 @@
 
   <table class="architecture" style="width: 100%; margin: 0px auto;">
 
+      <p style="text-align: center;">
+        
+            <tr>
+        <td align="center"> 
+          <img src="/uploads/SoundResynthesis_demo/codec_pipeline.png" width="1000" alt=""/> <br />
+          <p style="text-align: center">
+            Fig. 1: the architecture for the proposed codec pipeline.<br>
+          </p>
+        </td>
+      </tr>
+
       <tr>
         <td align="center"> 
           <img src="/uploads/SoundResynthesis_demo/vocoder_pipeline.png" width="1000" alt=""/> <br />
           <p style="text-align: center">
-            Fig. 1: the architecture for the proposed vocoder pipeline.<br>
+            Fig. 2: the architecture for the vocoder-based pipeline.<br>
           </p>
         </td>
-      </tr>
-      <p style="text-align: center;">
-        
-      
-      <tr>
         <td align="center"> 
-          <img src="/uploads/SoundResynthesis_demo/codec_pipeline.png" width="1000" alt=""/> <br />
+          <img src="/uploads/SoundResynthesis_demo/mapping_pipeline.png" width="1000" alt=""/> <br />
           <p style="text-align: center">
-            Fig. 2: the architecture for the proposed codec pipeline.<br>
+            Fig.3: the architecture for the mapping-based pipeline.<br>
           </p>
         </td>
       </tr>
-  
+
     </table>
   
 
