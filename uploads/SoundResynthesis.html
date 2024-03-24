@@ -78,7 +78,10 @@
      <div class="main">
        <article>
          <header>
-            <h1 style="text-align: center;">Unifying Robustness and Fidelity: <br> A Comprehensive Study of Pretrained Generative Methods for Speech Enhancement in Adverse Conditions</h1>		  
+            <h1 style="text-align: center;">
+              <!-- Unifying Robustness and Fidelity: <br> A Comprehensive Study of Pretrained Generative Methods for Speech Enhancement in Adverse Conditions -->
+              Unifying Robustness and Fidelity: <br> Using Pretrained Generative Methods for Speech Enhancement in Adverse Conditions
+            </h1>		  
          </header>
       </article>
       <div>
@@ -86,20 +89,20 @@
 
       <p style="text-align: center;">
       <b style="text-align: center;">Authors:</b>
-        Heming Wang, Meng Yu, Hao Zhang, Chunlei Zhang, Zhongweiyang Xu, Muqiao Yang, Yixuan Zhang, and Dong Yu
+      Anonymous
     </p>
 
       <p style="text-align: center; width: 50%; margin: 0px auto;">
       <b style="text-align: center;">Abstract: </b>
-      Enhancing speech signal quality in adverse acoustic environments is a persistent challenge in speech processing. Existing deep learning based enhancement methods often struggle to effectively remove background noise and reverberation in real-world scenarios, hampering listening experiences.
-        To mitigate these challenges, we propose a novel approach that uses pre-trained generative methods to resynthesize clean, anechoic speech from degraded inputs.
-        This study leverages pre-trained vocoder or codec models to synthesize high-quality speech while enhancing robustness in challenging scenarios.
-        Generative methods effectively handle information loss in speech signals, resulting in regenerated speech that has improved fidelity and reduced artifacts. By harnessing the capabilities of pre-trained models, we achieve faithful reproduction of the original speech in adverse conditions.
-        Experimental evaluations on both simulated datasets and realistic samples demonstrate the effectiveness and robustness of our proposed methods.
-        Especially by leveraging codec, we achieve superior subjective scores in both simulated and realistic recordings.
-        The generated speech exhibits enhanced audio quality, reduced background noise, and reverberation.
-        Our findings highlight the potential of pre-trained generative techniques to revolutionize speech signal processing, particularly in scenarios where traditional methods falter.
-      </p>
+      Enhancing speech signals in adverse acoustic environments is a long-standing challenge in speech processing.
+      Existing deep learning based enhancement methods struggle with removing background noise and reverberation in real-world challenging scenarios.
+      To address this challenge, we propose a novel approach that uses a pre-trained speech codec to synthesize clean speech given degraded inputs.
+      In addition, we conduct a comprehensive comparison with two other pipelines: mapping-based and vocoder-based speech enhancement.
+      Experimental results on both simulated and recorded datasets demonstrate the effectiveness and robustness of our proposed method.
+      We observe generative methods show stronger robustness against degradation compared with conventional mapping-based speech enhancement.
+      In particular, by leveraging the codec, we achieve improved audio quality with reduced background noise, and reverberation.
+    
+    </p>
       
       <hr color="#0ABAB5"; size="5">
 
@@ -111,30 +114,35 @@
 
   <h2 id="architecture" style="text-align: center;"> Architectures of the proposed vocoder and codec approaches </h2>
 
-  <table class="architecture" style="width: 100%; margin: 0px auto;">
+  <table class="architecture" align=center style="width: 1100; margin: 0px auto;">
 
       <tr>
-        <td align="center"> 
-          <img src="/uploads/SoundResynthesis_demo/vocoder_pipeline.png" width="1000" alt=""/> <br />
+        <td align="center" colspan="2"> 
+          <img src="/uploads/SoundResynthesis_demo/codec_pipeline.png" width="1000" alt=""/> <br />
           <p style="text-align: center">
-            Fig. 1: the architecture for the proposed vocoder pipeline.<br>
+            Fig. 1: the architecture for the proposed codec pipeline.<br>
           </p>
         </td>
       </tr>
       <p style="text-align: center;">
-        
-      
+
       <tr>
         <td align="center"> 
-          <img src="/uploads/SoundResynthesis_demo/codec_pipeline.png" width="1000" alt=""/> <br />
+          <img src="/uploads/SoundResynthesis_demo/vocoder_pipeline.png" width="600" alt=""/> <br />
           <p style="text-align: center">
-            Fig. 2: the architecture for the proposed codec pipeline.<br>
+            Fig. 2: the architecture for the vocoder-based pipeline.<br>
+          </p>
+        </td>
+        <td align="center"> 
+          <img src="/uploads/SoundResynthesis_demo/mapping_pipeline.png" width="400" alt=""/> <br />
+          <p style="text-align: center">
+            Fig.3: the architecture for the mapping-based pipeline.<br>
           </p>
         </td>
       </tr>
-  
+
     </table>
-  
+
 
   <hr color="#0ABAB5"; size="5">
 
