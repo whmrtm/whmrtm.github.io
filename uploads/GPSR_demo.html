@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"> 
+        
+        <meta name="description" content="GPSR Demos">
+        <meta name="author" content="Heming Wang">
+        
+        <title>GPSR Demos</title>
+        
+        <!-- Bootflat CSS -->
+        <link rel="stylesheet" href="css/bootflat.css">
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/index.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    </head>
+
+    
+    <body>
+
+    <div id="container">
+    <!-- <div id="paper_title"> -->
+    <h1 style="text-align: center;"> Combined Generative and Predictive Modeling for Speech Super-resolution</h1>
+    </div>
+    <h3 id="paper_authors" style="text-align: center;">Heming Wang, Eric W. Healy and DeLiang Wang</h3>
+    <div>&nbsp;</div>
+
+    <div id="paper_abstract" style="width: 60%; margin: 0px auto;">
+    The following audio signals provide sound demonstrations for the above paper which is under review by <i>Computer Speech & Language</i>. The demos are organized by two categories, first we display samples for the VCTK dataset. Then we display the comparison with other SR methods on the recorded DAPS dataset.
+    </div>
+
+
+    <div>&nbsp;</div>
+
+    <h2 style="text-align: center;">Audio Demos</h2>
+
+    <h4 style="text-align: center;"> Simulated VCTK dataset, from 8 to 16 kHz</h4>
+    <table class="audio_demos" style="width: 50%; margin: 0px auto;">
+    <thead>
+    <tr>
+    <th style="text-align: center;">LR</th>
+    <th style="text-align: center;">AECNN</th>
+    <th style="text-align: center;">NuWave2</th>
+    <th style="text-align: center;">NVSR</th>
+    <th style="text-align: center;">Proposed</th>
+    <th style="text-align: center;">Ground Truth</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr style="border-top: 1px solid black;">
+    <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/GPSR_demo1/simu/NoisyLR_28.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/GPSR_demo1/simu/AECNN_28.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/GPSR_demo1/simu/Nuwave2_28.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/GPSR_demo1/simu/NVSR_28.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/GPSR_demo1/simu/Resyn_28.wav" type="audio/wav" />
+                                    </audio></td>
+    <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/GPSR_demo1/simu/Clean_28.wav" type="audio/wav" />
+                                    </audio></td>
+                                  </tr>
+    <tr>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+        <source src="/uploads/GPSR_demo1/simu/NoisyLR_104.wav" type="audio/wav" />
+        </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/simu/AECNN_104.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/simu/Nuwave2_104.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/simu/NVSR_104.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/simu/Resyn_104.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/simu/Clean_104.wav" type="audio/wav" />
+              </audio></td>
+
+    </tr>
+    <tr>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+        <source src="/uploads/GPSR_demo1/simu/NoisyLR_148.wav" type="audio/wav" />
+        </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/simu/AECNN_148.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/simu/Nuwave2_148.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/simu/NVSR_148.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/simu/Resyn_148.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/simu/Clean_148.wav" type="audio/wav" />
+              </audio></td>
+</tr>
+    </tbody>
+    </table>
+
+
+
+    <h4 style="text-align: center;">DAPS (Recorded) </h4>
+    <table class="audio_demos"  style="width: 50%; margin: 0px auto;">
+    <thead>
+    <tr>
+      <th style="text-align: center;">LR</th>
+      <th style="text-align: center;">AECNN</th>
+      <th style="text-align: center;">NuWave2</th>
+      <th style="text-align: center;">NVSR</th>
+      <th style="text-align: center;">Proposed</th>
+      <th style="text-align: center;">Ground Truth</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr style="border-top: 1px solid black;">
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+        <source src="/uploads/GPSR_demo1/recorded_daps/NoisyLR_0.wav" type="audio/wav" />
+        </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_daps/AECNN_0.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_daps/Nuwave2_0.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_daps/NVSR_0.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_daps/Resyn_0.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_daps/Clean_0.wav" type="audio/wav" />
+              </audio></td>
+</tr>
+    <tr>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+        <source src="/uploads/GPSR_demo1/recorded_daps/NoisyLR_63.wav" type="audio/wav" />
+        </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_daps/AECNN_63.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_daps/Nuwave2_63.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_daps/NVSR_63.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_daps/Resyn_63.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_daps/Clean_63.wav" type="audio/wav" />
+              </audio></td>
+  </tr>
+    <tr>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+        <source src="/uploads/GPSR_demo1/recorded_daps/NoisyLR_66.wav" type="audio/wav" />
+        </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_daps/AECNN_66.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_daps/Nuwave2_66.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_daps/NVSR_66.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_daps/Resyn_66.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_daps/Clean_66.wav" type="audio/wav" />
+              </audio></td>
+
+      </tr>
+    </tbody>
+    </table>
+
+
+          <!-- </tr>
+    </tbody>
+    </table> -->
+
+    <h4 style="text-align: center;">VCTK (Recorded) </h4>
+    <table class="audio_demos"  style="width: 50%; margin: 0px auto;">
+    <thead>
+    <tr>
+      <th style="text-align: center;">LR</th>
+      <th style="text-align: center;">AECNN</th>
+      <th style="text-align: center;">NuWave2</th>
+      <th style="text-align: center;">NVSR</th>
+      <th style="text-align: center;">Proposed</th>
+      <th style="text-align: center;">Ground Truth</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr style="border-top: 1px solid black;">
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+        <source src="/uploads/GPSR_demo1/recorded_vctk/NoisyLR_78.wav" type="audio/wav" />
+        </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_vctk/AECNN_78.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_vctk/Nuwave2_78.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_vctk/NVSR_78.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_vctk/Resyn_78.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_vctk/Clean_78.wav" type="audio/wav" />
+              </audio></td>
+</tr>
+    <tr>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+        <source src="/uploads/GPSR_demo1/recorded_vctk/NoisyLR_81.wav" type="audio/wav" />
+        </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_vctk/AECNN_81.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_vctk/Nuwave2_81.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_vctk/NVSR_81.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_vctk/Resyn_81.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_vctk/Clean_81.wav" type="audio/wav" />
+              </audio></td>
+  </tr>
+    <tr>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+        <source src="/uploads/GPSR_demo1/recorded_vctk/NoisyLR_123.wav" type="audio/wav" />
+        </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_vctk/AECNN_123.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_vctk/Nuwave2_123.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_vctk/NVSR_123.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_vctk/Resyn_123.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/GPSR_demo1/recorded_vctk/Clean_123.wav" type="audio/wav" />
+              </audio></td>
+
+      </tr>
+    </tbody>
+    </table>
+
+
+          </tr>
+    </tbody>
+    </table>
+
+    </div>
+
+</body>
+</html>
