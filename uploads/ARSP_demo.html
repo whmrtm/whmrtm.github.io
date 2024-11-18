@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"> 
+        
+        <meta name="description" content="GPSR Demos">
+        <meta name="author" content="Heming Wang">
+        
+        <title>ARSP Demos</title>
+        
+        <!-- Bootflat CSS -->
+        <link rel="stylesheet" href="css/bootflat.css">
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/index.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    </head>
+
+    
+    <body>
+
+    <div id="container">
+    <!-- <div id="paper_title"> -->
+    <h1 style="text-align: center;"> Codec-Based Speech Frame Prediction </h1>
+    </div>
+    <h3 id="paper_authors" style="text-align: center;">Heming Wang and DeLiang Wang</h3>
+    <div>&nbsp;</div>
+
+    <div id="paper_abstract" style="width: 60%; margin: 0px auto;">
+    The following audio signals provide sound demonstrations for the above paper with the title and authors given above. 
+    The paper is under review with <i>Transaction of Audio and Lanuguage Processing</i> as of November 2024. 
+    We provide two categories of samples, packet loss concealment, and the reconstructed speech when predicting one frame ahead.
+
+    </div>
+
+
+    <div>&nbsp;</div>
+
+    <h2 style="text-align: center;">Audio Demos</h2>
+
+    <h4 style="text-align: center;"> Packet Loss Concealment</h4>
+    <table class="audio_demos" style="width: 50%; margin: 0px auto;">
+    <thead>
+    <tr>
+    <th style="text-align: center;">Original Speech</th>
+    <th style="text-align: center;">Packet Loss Speech</th>
+    <th style="text-align: center;">Proposed</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr style="border-top: 1px solid black;">
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+                <source src="/uploads/ARSP_demo/PLC/original_1.wav" type="audio/wav" />
+                </audio></td>
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/ARSP_demo/PLC/plc_1.wav" type="audio/wav" />
+                                        </audio></td>
+
+    <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+                                    <source src="/uploads/ARSP_demo/PLC/proposed_1.wav" type="audio/wav" />
+                                    </audio></td>
+                                  </tr>
+
+
+        <tr style="border-top: 1px solid black;">
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+                <source src="/uploads/ARSP_demo/PLC/original_2.wav" type="audio/wav" />
+                </audio></td>
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/ARSP_demo/PLC/plc_2.wav" type="audio/wav" />
+                                        </audio></td>
+
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+                                        <source src="/uploads/ARSP_demo/PLC/proposed_2.wav" type="audio/wav" />
+                                        </audio></td>
+                                        </tr>
+
+
+        <tr style="border-top: 1px solid black;">
+                <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+                        <source src="/uploads/ARSP_demo/PLC/original_3.wav" type="audio/wav" />
+                        </audio></td>
+                <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+                                                <source src="/uploads/ARSP_demo/PLC/plc_3.wav" type="audio/wav" />
+                                                </audio></td>
+        
+                <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+                                                <source src="/uploads/ARSP_demo/PLC/proposed_3.wav" type="audio/wav" />
+                                                </audio></td>
+                                                </tr>
+                                </tbody>
+    </table>
+
+
+
+    <h4 style="text-align: center;">Framewise Speech Prediction (one frame ahead) </h4>
+    <table class="audio_demos"  style="width: 50%; margin: 0px auto;">
+    <thead>
+    <tr>
+        <th style="text-align: center;">LPC</th>
+        <th style="text-align: center;">LSTM</th>
+        <th style="text-align: center;">TFGAN</th>
+        <th style="text-align: center;">Proposed</th>
+</tr>
+    </thead>
+    <tbody>
+    <tr style="border-top: 1px solid black;">
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+                <source src="/uploads/ARSP_demo/frame/LPC_0.wav" type="audio/wav" />
+                </audio></td>  
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/ARSP_demo/frame/LSTM_0.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/ARSP_demo/frame/TFGAN_0.wav" type="audio/wav" />
+              </audio></td>
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/ARSP_demo/frame/Proposed_0.wav" type="audio/wav" />
+              </audio></td>
+</tr>
+
+<tr style="border-top: 1px solid black;">
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+                <source src="/uploads/ARSP_demo/frame/LPC_1.wav" type="audio/wav" />
+                </audio></td>  
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/ARSP_demo/frame/LSTM_1.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/ARSP_demo/frame/TFGAN_1.wav" type="audio/wav" />
+              </audio></td>
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/ARSP_demo/frame/Proposed_1.wav" type="audio/wav" />
+              </audio></td>
+</tr>
+
+<tr style="border-top: 1px solid black;">
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+                <source src="/uploads/ARSP_demo/frame/LPC_2.wav" type="audio/wav" />
+                </audio></td>  
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/ARSP_demo/frame/LSTM_2.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/ARSP_demo/frame/TFGAN_2.wav" type="audio/wav" />
+              </audio></td>
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/ARSP_demo/frame/Proposed_2.wav" type="audio/wav" />
+              </audio></td>
+</tr>
+
+
+</tbody>
+    </table>
+
+
+          <!-- </tr>
+    </tbody>
+    </table> -->
+
+    </div>
+
+</body>
+</html>
