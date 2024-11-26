@@ -30,97 +30,30 @@
 
     <div id="container">
     <!-- <div id="paper_title"> -->
-    <h1 style="text-align: center;"> Codec-Based Speech Frame Prediction </h1>
+    <h1 style="text-align: center;"> Frame-wise Speech Prediction Demo </h1>
     </div>
     <h3 id="paper_authors" style="text-align: center;">Heming Wang and DeLiang Wang</h3>
     <div>&nbsp;</div>
 
     <div id="paper_abstract" style="width: 60%; margin: 0px auto;">
-    The following audio signals provide sound demonstrations for the above paper with the title and authors given above. 
-    The paper is under review with <i>Transaction of Audio and Lanuguage Processing</i> as of November 2024. 
-    We provide two categories of samples, packet loss concealment, and the reconstructed speech when predicting one frame ahead.
-
+        The following audio signals provide sound demonstrations for our paper entitled “A speech prediction model based on codec modeling and transformer decoding,” under review with <i>IEEE/ACM Transactions on Audio, Speech, and Language Processing</i> as of November 2024. We provide predicted speech samples with one-frame prediction, frame by frame.
     </div>
 
 
     <div>&nbsp;</div>
 
-    <h2 style="text-align: center;">Audio Demos</h2>
-
-    <h4 style="text-align: center;"> Packet Loss Concealment</h4>
-    <table class="audio_demos" style="width: 50%; margin: 0px auto;">
-    <thead>
-    <tr>
-    <th style="text-align: center;">Original Speech</th>
-    <th style="text-align: center;">Packet Loss Speech</th>
-    <th style="text-align: center;">Proposed</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr style="border-top: 1px solid black;">
-        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
-                <source src="/uploads/ARSP_demo/PLC/original_1.wav" type="audio/wav" />
-                </audio></td>
-        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
-                                        <source src="/uploads/ARSP_demo/PLC/plc_1.wav" type="audio/wav" />
-                                        </audio></td>
-
-    <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
-                                    <source src="/uploads/ARSP_demo/PLC/proposed_1.wav" type="audio/wav" />
-                                    </audio></td>
-                                  </tr>
-
-
-        <tr style="border-top: 1px solid black;">
-        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
-                <source src="/uploads/ARSP_demo/PLC/original_2.wav" type="audio/wav" />
-                </audio></td>
-        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
-                                        <source src="/uploads/ARSP_demo/PLC/plc_2.wav" type="audio/wav" />
-                                        </audio></td>
-
-        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
-                                        <source src="/uploads/ARSP_demo/PLC/proposed_2.wav" type="audio/wav" />
-                                        </audio></td>
-                                        </tr>
-
-
-        <tr style="border-top: 1px solid black;">
-                <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
-                        <source src="/uploads/ARSP_demo/PLC/original_3.wav" type="audio/wav" />
-                        </audio></td>
-                <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
-                                                <source src="/uploads/ARSP_demo/PLC/plc_3.wav" type="audio/wav" />
-                                                </audio></td>
-        
-                <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
-                                                <source src="/uploads/ARSP_demo/PLC/proposed_3.wav" type="audio/wav" />
-                                                </audio></td>
-                                                </tr>
-                                </tbody>
-    </table>
-
-
-
     <h4 style="text-align: center;">Framewise Speech Prediction (one frame ahead) </h4>
     <table class="audio_demos"  style="width: 50%; margin: 0px auto;">
     <thead>
     <tr>
-        <th style="text-align: center;">LPC</th>
-        <th style="text-align: center;">LSTM</th>
-        <th style="text-align: center;">CrossNet</th>
+        <th style="text-align: center;">TF-CrossNet</th>
         <th style="text-align: center;">TFGAN</th>
         <th style="text-align: center;">Proposed</th>
-</tr>
+        <th style="text-align: center;">Original</th>
+    </tr>
     </thead>
     <tbody>
     <tr style="border-top: 1px solid black;">
-        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
-                <source src="/uploads/ARSP_demo/frame/LPC_0.wav" type="audio/wav" />
-                </audio></td>  
-        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
-              <source src="/uploads/ARSP_demo/frame/LSTM_0.wav" type="audio/wav" />
-              </audio></td>
         <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
         <source src="/uploads/ARSP_demo/frame/Crossnet_0.wav" type="audio/wav" />
         </audio></td>
@@ -131,35 +64,30 @@
       <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
               <source src="/uploads/ARSP_demo/frame/Proposed_0.wav" type="audio/wav" />
               </audio></td>
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+        <source src="/uploads/ARSP_demo/frame/Original_0.wav" type="audio/wav" />
+        </audio></td>
 </tr>
 
 <tr style="border-top: 1px solid black;">
+
         <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
-                <source src="/uploads/ARSP_demo/frame/LPC_1.wav" type="audio/wav" />
-                </audio></td>  
+        <source src="/uploads/ARSP_demo/frame/Crossnet_1.wav" type="audio/wav" />
+        </audio></td>
+
         <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
-              <source src="/uploads/ARSP_demo/frame/LSTM_1.wav" type="audio/wav" />
-              </audio></td>
-              <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
-                <source src="/uploads/ARSP_demo/frame/Crossnet_1.wav" type="audio/wav" />
-                </audio></td>
-        
-              <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
-              <source src="/uploads/ARSP_demo/frame/TFGAN_1.wav" type="audio/wav" />
+        <source src="/uploads/ARSP_demo/frame/TFGAN_1.wav" type="audio/wav" />
               </audio></td>
               </audio></td>
       <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
               <source src="/uploads/ARSP_demo/frame/Proposed_1.wav" type="audio/wav" />
               </audio></td>
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+        <source src="/uploads/ARSP_demo/frame/Original_1.wav" type="audio/wav" />
+        </audio></td>
 </tr>
 
 <tr style="border-top: 1px solid black;">
-        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
-                <source src="/uploads/ARSP_demo/frame/LPC_2.wav" type="audio/wav" />
-                </audio></td>  
-        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
-              <source src="/uploads/ARSP_demo/frame/LSTM_2.wav" type="audio/wav" />
-              </audio></td>
         <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
         <source src="/uploads/ARSP_demo/frame/Crossnet_2.wav" type="audio/wav" />
         </audio></td>
@@ -170,6 +98,57 @@
       <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
               <source src="/uploads/ARSP_demo/frame/Proposed_2.wav" type="audio/wav" />
               </audio></td>
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+        <source src="/uploads/ARSP_demo/frame/Original_2.wav" type="audio/wav" />
+        </audio></td>
+</tr>
+
+<tr style="border-top: 1px solid black;">
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+        <source src="/uploads/ARSP_demo/frame/Crossnet_3.wav" type="audio/wav" />
+        </audio></td>
+        
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/ARSP_demo/frame/TFGAN_3.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/ARSP_demo/frame/Proposed_3.wav" type="audio/wav" />
+              </audio></td>
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+        <source src="/uploads/ARSP_demo/frame/Original_3.wav" type="audio/wav" />
+        </audio></td>
+</tr>
+
+<tr style="border-top: 1px solid black;">
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+        <source src="/uploads/ARSP_demo/frame/Crossnet_4.wav" type="audio/wav" />
+        </audio></td>
+        
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/ARSP_demo/frame/TFGAN_4.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/ARSP_demo/frame/Proposed_4.wav" type="audio/wav" />
+              </audio></td>
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+        <source src="/uploads/ARSP_demo/frame/Original_4.wav" type="audio/wav" />
+        </audio></td>
+</tr>
+
+<tr style="border-top: 1px solid black;">
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+        <source src="/uploads/ARSP_demo/frame/Crossnet_5.wav" type="audio/wav" />
+        </audio></td>
+        
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/ARSP_demo/frame/TFGAN_5.wav" type="audio/wav" />
+              </audio></td>
+      <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+              <source src="/uploads/ARSP_demo/frame/Proposed_5.wav" type="audio/wav" />
+              </audio></td>
+        <td><audio class="audio-player" style="width: 180px;" preload="metadata" controls="controls">
+        <source src="/uploads/ARSP_demo/frame/Original_5.wav" type="audio/wav" />
+        </audio></td>
 </tr>
 
 
