@@ -1,21 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>2 | Heming Wang</title>
+    <title>2 on Heming Wang</title>
     <link>https://whmrtm.github.io/publication-type/2/</link>
-      <atom:link href="https://whmrtm.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
-    <description>2</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>https://whmrtm.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>2</title>
-      <link>https://whmrtm.github.io/publication-type/2/</link>
-    </image>
-    
+    <description>Recent content in 2 on Heming Wang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://whmrtm.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Combined Generative and Predictive Modeling for Speech Super-resolution</title>
       <link>https://whmrtm.github.io/publication/wang-2024-combined/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
       <guid>https://whmrtm.github.io/publication/wang-2024-combined/</guid>
       <description></description>
     </item>
@@ -24,6 +20,7 @@
       <title>uSee: Unified Speech Enhancement and Editing with Conditional Diffusion Models</title>
       <link>https://whmrtm.github.io/publication/yang-2023-usee/</link>
       <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
+      
       <guid>https://whmrtm.github.io/publication/yang-2023-usee/</guid>
       <description></description>
     </item>
@@ -32,6 +29,7 @@
       <title>Diffusion Conditional Expectation Model for Efficient and Robust Target Speech Extraction</title>
       <link>https://whmrtm.github.io/publication/zhang-2023-diffusion/</link>
       <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      
       <guid>https://whmrtm.github.io/publication/zhang-2023-diffusion/</guid>
       <description></description>
     </item>
@@ -40,6 +38,7 @@
       <title>Unifying Robustness and Fidelity: A Comprehensive Study of Pretrained Generative Methods for Speech Enhancement in Adverse Conditions</title>
       <link>https://whmrtm.github.io/publication/wang-2023-unifying/</link>
       <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
+      
       <guid>https://whmrtm.github.io/publication/wang-2023-unifying/</guid>
       <description></description>
     </item>
@@ -48,6 +47,7 @@
       <title>SpatialCodec: Neural Spatial Speech Coding</title>
       <link>https://whmrtm.github.io/publication/xu-2023-spatialcodec/</link>
       <pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate>
+      
       <guid>https://whmrtm.github.io/publication/xu-2023-spatialcodec/</guid>
       <description></description>
     </item>
@@ -56,6 +56,7 @@
       <title>$ F0 $ Estimation and Voicing Detection With Cascade Architecture in Noisy Speech</title>
       <link>https://whmrtm.github.io/publication/zhang-2023-f-0/</link>
       <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
+      
       <guid>https://whmrtm.github.io/publication/zhang-2023-f-0/</guid>
       <description></description>
     </item>
@@ -64,6 +65,7 @@
       <title>Densely-connected Convolutional Recurrent Network for Fundamental Frequency Estimation in Noisy Speech</title>
       <link>https://whmrtm.github.io/publication/zhang-2022-densely/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://whmrtm.github.io/publication/zhang-2022-densely/</guid>
       <description></description>
     </item>
@@ -72,6 +74,7 @@
       <title>Fusing Bone-conduction and Air-conduction Sensors for Complex-Domain Speech Enhancement</title>
       <link>https://whmrtm.github.io/publication/wang-2022-fusing/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://whmrtm.github.io/publication/wang-2022-fusing/</guid>
       <description></description>
     </item>
@@ -80,6 +83,7 @@
       <title>Neural Cascade Architecture with Triple-domain Loss for Speech Enhancement</title>
       <link>https://whmrtm.github.io/publication/wang-2021-neural/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://whmrtm.github.io/publication/wang-2021-neural/</guid>
       <description></description>
     </item>
@@ -88,6 +92,7 @@
       <title>Towards Robust Speech Super-resolution</title>
       <link>https://whmrtm.github.io/publication/wang-2021-towards/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://whmrtm.github.io/publication/wang-2021-towards/</guid>
       <description></description>
     </item>
@@ -96,6 +101,7 @@
       <title>A Novel Foward-PDE Approach as an Alternative to Empirical Mode Decomposition</title>
       <link>https://whmrtm.github.io/publication/wang-2018-novel/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://whmrtm.github.io/publication/wang-2018-novel/</guid>
       <description></description>
     </item>
